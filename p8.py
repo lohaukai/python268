@@ -1,6 +1,6 @@
-score = input()
+score = eval(input())
 
-if (int(score) >= 60):
+if (score >= 60):
     print('pass')
 else:
     print('fail')
