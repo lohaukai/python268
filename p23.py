@@ -1,9 +1,8 @@
 inNum = eval(input())
-for j in range(inNum):
-    for i in range(inNum):
-        if i+1 < inNum-j:
-            print(' ', end='')
+for row in range(inNum):
+    for column in range(inNum):
+        if column+1 == inNum-row:
+            print('*'*(2*row+1), end='')
         else:
-            print('*'*(2*j+1), end='')
-            break
+            print(' ', end='')
     print()
