@@ -59,5 +59,14 @@ str= '''漢皇重色思傾國，	　御宇多年求不得。
 在天願作比翼鳥，	　在地願為連理枝。
 天長地久有時盡，	　此恨綿綿無絕期。'''
 
-
-print(len(str.replace('，	　','').replace('\n','').replace('。','')))
+str = str.replace('，	　','').replace('\n','').replace('。','')
+counter = 0
+findingWord = 0
+strLen = len(str)
+for i in range(strLen):
+    if counter < str.count(str[i]):
+         findingWord = str[i]
+         counter = str.count(str[i])
+print(findingWord)
+print(counter)
+print(strLen)
