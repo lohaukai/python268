@@ -1,6 +1,6 @@
-str = input()
+strIn = input()
 userIn = input()
-strIndex = str.find(userIn, 0)
+strIndex = strIn.find(userIn, 0)
 while strIndex != -1:
     print(strIndex)
-    strIndex = str.find(userIn, strIndex+1)
+    strIndex = strIn.find(userIn, strIndex + 1)

@@ -1,4 +1,4 @@
-str= '''漢皇重色思傾國，	　御宇多年求不得。
+strIn = '''漢皇重色思傾國，	　御宇多年求不得。
 楊家有女初長成，	　養在深閨人未識。
 天生麗質難自棄，	　一朝選在君王側。
 回眸一笑百媚生，	　六宮粉黛無顏色。
@@ -59,14 +59,14 @@ str= '''漢皇重色思傾國，	　御宇多年求不得。
 在天願作比翼鳥，	　在地願為連理枝。
 天長地久有時盡，	　此恨綿綿無絕期。'''
 
-str = str.replace('，	　','').replace('\n','').replace('。','')
-counter = 0
-findingWord = 0
-strLen = len(str)
+strIn = strIn.replace('，	　', '').replace('\n', '').replace('。', '')
+wordCount = 0
+wordFind = 0
+strLen = len(strIn)
 for i in range(strLen):
-    if counter < str.count(str[i]):
-         findingWord = str[i]
-         counter = str.count(str[i])
-print(findingWord)
-print(counter)
+    if wordCount < strIn.count(strIn[i]):
+        wordFind = strIn[i]
+        wordCount = strIn.count(strIn[i])
+print(wordFind)
+print(wordCount)
 print(strLen)

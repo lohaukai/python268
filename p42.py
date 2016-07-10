@@ -1,0 +1,6 @@
+strIn0 = input()
+print(strIn0)
+strIn1 = input()
+print(strIn1)
+strIn2 = input()
+print(strIn2)
