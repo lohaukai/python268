@@ -26,6 +26,7 @@ class Student:
         print('Grades:', self.grades)
         print('Avg: %.1f' % self.average)
         print('Fail Number:', self.fail)
+        print()
 
 
 def top(*students):
@@ -55,15 +56,10 @@ s5.add(60)
 s5.add(60)
 
 s1.info()
-print()
 s2.info()
-print()
 s3.info()
-print()
 s4.info()
-print()
 s5.info()
-print()
 print('Top Student:')
 top(s1, s2, s3, s4, s5).info()
 # Name = input()
